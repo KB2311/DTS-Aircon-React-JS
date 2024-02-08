@@ -1,5 +1,5 @@
 import React from 'react';
-import './Client.module.css';
+import './Client.css';
 
 const logo = [
   {

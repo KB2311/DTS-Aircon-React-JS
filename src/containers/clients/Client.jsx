@@ -1,5 +1,4 @@
 import React from 'react';
-import './Client.module.css';
 import CompanyLogo from '../../components/companyLogo/CompanyLogo';
 
 function Client() {

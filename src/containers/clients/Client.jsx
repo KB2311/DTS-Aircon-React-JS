@@ -1,6 +1,6 @@
 import React from 'react';
-import './style.css';
-import CompanyLogo from '../../components/companyLogo';
+import './Client.module.css';
+import CompanyLogo from '../../components/companyLogo/CompanyLogo';
 
 function Client() {
   return (
@@ -11,7 +11,7 @@ function Client() {
             Major Clients
           </p>
         </div>
-        <div className="company_logo">
+        <div className="mt-11 flex h-3/5 flex-wrap justify-center gap-2">
           <CompanyLogo />
         </div>
       </div>

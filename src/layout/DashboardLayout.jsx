@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from '../containers/Header';
-import Footer from '../containers/Footer';
+import Header from '../containers/Header/Header';
+import Footer from '../containers/Footer/Footer';
 
 function DashboardLayout() {
   return (

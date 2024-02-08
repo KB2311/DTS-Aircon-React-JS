@@ -7,13 +7,13 @@ import Contact from '../../containers/contact/Contact';
 
 function Home() {
   return (
-    <div>
+    <main className=''>
       <About />
       <Services />
       <Projects />
       <Client />
       <Contact />
-    </div>
+    </main>
   );
 }
 

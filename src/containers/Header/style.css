@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar > li > a:after {
+  display: block;
+  content: '';
+  padding-top: 0.2rem;
+  border-bottom: solid 3px greenyellow;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbar > li > a:hover:after {
+  transform: scaleX(1);
+}

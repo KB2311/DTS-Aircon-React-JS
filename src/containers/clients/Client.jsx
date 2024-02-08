@@ -1,5 +1,5 @@
 import React from 'react';
-import CompanyLogo from '../../components/companyLogo/CompanyLogo';
+import CompanyLogo from '../../components/companyCard/CompanyLogo';
 
 function Client() {
   return (

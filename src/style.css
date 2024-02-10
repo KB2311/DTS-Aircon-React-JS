@@ -14,3 +14,11 @@ html {
 section {
   @apply min-h-screen px-container pt-14;
 }
+
+.section_title {
+  @apply text-primary underline underline-offset-4;
+
+  & > span {
+    @apply text-secondery;
+  }
+}

@@ -12,5 +12,5 @@ html {
 }
 
 section {
-  @apply min-h-screen pt-14;
+  @apply min-h-screen px-container pt-14;
 }

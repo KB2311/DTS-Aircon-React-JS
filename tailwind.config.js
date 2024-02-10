@@ -16,7 +16,7 @@ module.exports = {
         '3/4': '3 / 4',
       },
       spacing: {
-        container: `max(1rem, calc((100vw - calc(1280px - 1rem * 2)) / 2))`,
+        container: `max(1rem, calc((100vw - calc(1460px - 1rem * 2)) / 2))`,
         'sm-container': `max(1rem, calc((100vw - calc(1024px - 1rem * 2)) / 2))`,
       },
     },

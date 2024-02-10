@@ -8,7 +8,7 @@ import Hero from '../../containers/hero/Hero';
 
 function Home() {
   return (
-    <main className="px-container">
+    <main className="">
       <Hero />
       <About />
       <Services />

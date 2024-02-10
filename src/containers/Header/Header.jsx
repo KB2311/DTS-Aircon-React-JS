@@ -4,10 +4,10 @@ import './style.css';
 function Header() {
   return (
     <header
-      className="fixed left-0 right-0 top-0 z-50 bg-slate-400 px-3 py-2 font-bold"
+      className="fixed left-0 right-0 top-0 z-50  px-3 py-2 font-bold"
       id="header"
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-container">
         <div className="flex items-center gap-5">
           {' '}
           <img
@@ -18,24 +18,36 @@ function Header() {
           <h1 className="text-2xl">DTS Aircon</h1>
         </div>
         <nav className="px-10">
-          <ul className="hidden items-center gap-10 md:flex">
-            <li className="nav_link">
-              <a href="#hero">Home</a>
+          <ul className="hidden items-center gap-10 md:flex" id="navbar">
+            <li className="">
+              <a className="nav_link" href="#hero">
+                Home
+              </a>
+            </li>
+            <li className="">
+              <a className="nav_link" href="#about">
+                About
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a className="nav_link" href="#services">
+                Services
+              </a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a className="nav_link" href="#projects">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a className="nav_link" href="#clients">
+                Clients
+              </a>
             </li>
             <li>
-              <a href="#clients">Clients</a>
-            </li>
-            <li>
-              <a href="#contact">Contact Us</a>
+              <a className="nav_link" href="#contact">
+                Contact Us
+              </a>
             </li>
           </ul>
           <div className="md:hidden">Menu</div>

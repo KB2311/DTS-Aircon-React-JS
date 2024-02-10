@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Hero() {
-  return <section id="hero">Hero</section>;
+  return (
+    <div className="pt-14 min-h-screen" id="hero">
+      Hero
+    </div>
+  );
 }
 
 export default Hero;

@@ -1,7 +1,13 @@
 import React from 'react';
 
 function Services() {
-  return <section id="services">Services</section>;
+  return (
+    <section>
+      <div className="text-blue-600">
+        OUR <span className="text-">SERVICES</span>
+      </div>
+    </section>
+  );
 }
 
 export default Services;

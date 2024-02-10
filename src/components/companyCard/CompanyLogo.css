@@ -4,6 +4,6 @@
 
 .hexagon {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  @apply relative flex h-36 w-36 basis-36 items-center justify-center p-5;
+  @apply relative flex h-32 w-32 basis-32 items-center justify-center p-5 xsm:h-36 xsm:w-36;
   background: #f2f2f2;
 }

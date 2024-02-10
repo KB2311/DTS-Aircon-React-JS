@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../../Assets/Hero.jpg');
+}
+
+#get_Brochure {
+  @apply scale-100 duration-500 hover:scale-125 hover:bg-gradient-to-b hover:from-secondary hover:to-primary hover:ring-0;
+}

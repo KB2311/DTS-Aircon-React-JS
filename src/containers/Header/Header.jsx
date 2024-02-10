@@ -8,15 +8,15 @@ function Header() {
       id="header"
     >
       <div className="flex items-center justify-between px-container">
-        <div className="flex items-center gap-5">
+        <a className="flex cursor-pointer items-center gap-5" href="#home">
           {' '}
           <img
-            className="h-10"
+            className="h-10 "
             src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707243196/DTS-Aircon/DTS_logo_ecaznx.png"
             alt="DTSlogo"
           />
-          <h1 className="text-lg xsm:text-2xl">DTS Aircon</h1>
-        </div>
+          <h1 className=" text-lg xsm:text-2xl">DTS Aircon</h1>
+        </a>
         <nav className="lg:px-10">
           <ul
             className="hidden items-center gap-10 uppercase lg:flex"

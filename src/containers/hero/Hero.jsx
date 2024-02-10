@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="h-screen pt-14" id="hero">
       <div className="flex h-full items-center justify-center text-center">
-        <div className=" rounded-full bg-black bg-opacity-65 p-9 font-bold ">
+        <div className=" bg-black bg-opacity-65 p-9 font-bold lg:rounded-full ">
           <h2 className=" pt-5 text-5xl text-white">
             ❝ <span className="text-secondary">Building - The Revolution</span>{' '}
             ❞

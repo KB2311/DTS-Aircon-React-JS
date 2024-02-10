@@ -5,8 +5,8 @@ function Client() {
   return (
     <section className="" id="clients">
       <div className="mx-auto flex max-w-7xl flex-col items-center">
-        <div className="border-b-[3px] border-sky-500" data-aos="fade-up">
-          <p className="headline_of_section text-2xl font-semibold">
+        <div data-aos="fade-up">
+          <p className="headline_of_section">
             <h2 className="section_title">
               Major <span>Clients</span>
             </h2>

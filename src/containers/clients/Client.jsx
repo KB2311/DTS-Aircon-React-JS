@@ -4,7 +4,7 @@ import CompanyLogo from '../../components/companyCard/CompanyLogo';
 function Client() {
   return (
     <section className="" id="clients">
-      <div className="mx-auto flex max-w-7xl flex-col items-center">
+      <div className="mx-auto flex max-w-7xl flex-col">
         <div data-aos="fade-up">
           <p className="headline_of_section">
             <h2 className="section_title">

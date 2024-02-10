@@ -34,7 +34,7 @@ section {
 }
 
 .section_title {
-  @apply text-primary text-2xl font-semibold underline underline-offset-4;
+  @apply text-primary text-center text-3xl font-bold underline underline-offset-4;
 
   & > span {
     @apply text-secondary underline underline-offset-4;

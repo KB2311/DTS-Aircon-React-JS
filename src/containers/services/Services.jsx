@@ -7,7 +7,7 @@ function Services() {
       <h2 className="section_title">
         Our <span>Services</span>
       </h2>
-      <h3 className="py-10 text-center text-xl text-slate-600">
+      <h3 className="py-6 text-center text-xl text-slate-600">
         Provide following integrated MEP services with design, detailed
         engineering, Procurement, project aranagement, installation, testingt
         commissiontng, approvals from authorities & maintenance.

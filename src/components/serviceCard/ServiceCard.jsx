@@ -49,12 +49,12 @@ function ServiceCard() {
     <div className="relative grid grid-cols-1 justify-items-center gap-x-2 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
       {services.map(x => (
         <div className="rounded-xl bg-primary py-5 text-center xsm:w-80">
-          <h3 className="text-3xl font-bold text-primary-2">
+          <h3 className="text-3xl font-bold text-secondary">
             {x.service_title}
           </h3>
           <div
             style={{ backgroundImage: `url(${x.service_image})` }}
-            className="mx-auto my-5 aspect-square h-64 rounded-xl border-4 border-primary-2 bg-cover bg-center"
+            className="mx-auto my-5 aspect-square h-64 rounded-xl border-4 border-secondary bg-cover bg-center"
             data-aos="fade-up"
           />
           <h3>{x.services_detail}</h3>

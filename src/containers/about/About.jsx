@@ -12,7 +12,7 @@ function About() {
       </h2>
       <div className="pt-5 text-justify">
         <div className="grid grid-cols-1 justify-center gap-5 rounded-xl  bg-primary p-5 text-xl xsm:gap-8 xsm:p-8 md:grid-cols-2">
-          <p className="rounded-xl p-2 ring-2 ring-secondary">
+          <p className=" rounded-xl p-2 ring-2 ring-secondary">
             {' '}
             To being with we are highly obliged and thankful to{' '}
             <span className="font-bold text-secondary">
@@ -22,15 +22,14 @@ function About() {
             commerce and in where we could be able to contribute our services to
             India and Oman the land of Peace and Harmony.
           </p>
-          <p className="rounded-xl p-2 ring-2 ring-secondary">
+          <p className="flex items-center rounded-xl p-2 ring-2 ring-secondary">
             {' '}
             On the outset of DTS inception, we were primarily established as a
             small HVAC contractor in the year 2010 during the years we have
             developed our base as an MEP contracting and project management
             company.{' '}
           </p>
-
-          <p className="rounded-xl p-2 ring-2 ring-secondary">
+          <p className="flex items-center rounded-xl p-2 ring-2 ring-secondary">
             Over the years in the industry as a contractor and project
             management expertise on various opportunities we have accomplished
             excellence in our core strength as hvac Contractors in the India
@@ -62,9 +61,9 @@ function About() {
               <EyeIcon height={60} className="fill-red-500" />
             </div>
             <p className="pb-3 xsm:pt-3">
-              <span className="text-xl font-bold">“</span> Leadership through
-              innovative and responsible solutions.
-              <span className="text-xl font-bold">”</span> We always strive to
+              <span className="text-xl font-bold">“</span>
+              <b> Leadership through innovative and responsible solutions.</b>
+              <span className="text-xl font-bold"> ”</span> We always strive to
               be recognized as a leader in the market place for our creativity
               and our ability to provide solutions that maximize long-term
               value. We excel at complex, value driven projects delivered in a

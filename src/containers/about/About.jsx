@@ -6,6 +6,7 @@ function About() {
       <h2 className="section_title">
         About <span>Us</span>
       </h2>
+      <div className="wrapper"> heloo</div>
     </section>
   );
 }

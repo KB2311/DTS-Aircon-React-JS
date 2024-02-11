@@ -11,7 +11,12 @@ function Hero() {
             ❞
           </h2>
           <h2 className="py-10 text-3xl">MEP & HVAC Contracting Services</h2>
-          <a href="#home">
+          <a
+            href="https://ik.imagekit.io/b8au2iwe2/DTS%20Aircon%20Images/DTS%20Brochure%20Final.pdf?updatedAt=1707572697810"
+            download="DTS Aircon Brochure"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button
               className="rounded-full px-4 py-2 text-xl uppercase text-white ring-2 ring-white"
               type="button"

@@ -9,5 +9,5 @@
 }
 
 #get_Brochure {
-  @apply scale-100 duration-500 hover:scale-125 hover:bg-gradient-to-b hover:from-secondary hover:to-primary hover:ring-0;
+  @apply scale-100 duration-300 hover:scale-125 hover:bg-gradient-to-b hover:from-secondary hover:to-primary hover:ring-0;
 }

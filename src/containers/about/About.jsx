@@ -10,8 +10,8 @@ function About() {
       <h2 className="section_title pb-3">
         About <span>Us</span>
       </h2>
-      <div className="pt-5">
-        <div className="grid grid-cols-1 justify-center gap-5 rounded-xl bg-primary p-5 text-xl md:grid-cols-2">
+      <div className="pt-5 text-justify">
+        <div className="grid grid-cols-1 justify-center gap-5 rounded-xl  bg-primary p-5 text-xl xsm:gap-8 xsm:p-8 md:grid-cols-2">
           <p className="rounded-xl p-2 ring-2 ring-secondary">
             {' '}
             To being with we are highly obliged and thankful to{' '}
@@ -44,23 +44,24 @@ function About() {
             of prestigious local and international national organizations.{' '}
           </p>
         </div>
-        <div className="mx-auto grid grid-cols-1 gap-20 px-8 pt-20  font-semibold text-slate-600 lg:grid-cols-3 lg:gap-5">
+        <div className="mx-auto grid grid-cols-1 gap-24 pt-20 font-semibold  text-slate-600 xsm:px-2 lg:grid-cols-3 lg:gap-5">
           <div className="icon_div">
             <div className="icon_svg">
               <MissionIcon className="pl-2" height={90} />
             </div>
-            <p className="">
+            <p className="pb-3 xsm:pt-3">
               Our Core Values are guiding principles that transcend the effects
               of time or outside influence. They demonstrate the characteristics
               we admire, that we measure people by, and that forms the basis of
               our staffing decisions
             </p>
+            <div className="icon_title">Values</div>
           </div>
           <div className="icon_div">
             <div className="icon_svg">
               <EyeIcon height={60} className="fill-red-500" />
             </div>
-            <p>
+            <p className="pb-3 xsm:pt-3">
               <span className="text-xl font-bold">“</span> Leadership through
               innovative and responsible solutions.
               <span className="text-xl font-bold">”</span> We always strive to
@@ -69,14 +70,81 @@ function About() {
               value. We excel at complex, value driven projects delivered in a
               team environment.
             </p>
+            <div className="icon_title">Visions</div>
           </div>
           <div className="icon_div">
             <div className="icon_svg">
               <RocketIcon height={60} className="fill-red-500" />
             </div>
-            <p className="text-xl lg:pt-5">
+            <p className="pb-3 text-xl lg:py-5">
               Value driven Customer loyalty Challenging projects
             </p>
+            <div className="icon_title">Mission</div>
+          </div>
+        </div>
+      </div>
+      <div className="flex h-full flex-col gap-10 pt-20 ">
+        <div className="flex flex-col items-center lg:flex-row">
+          <div className="flex flex-col items-center justify-center gap-2 px-1 pb-5 text-slate-700 md:w-[25%] lg:pb-0">
+            <img
+              className="aspect-square w-40 rounded-full ring-4 ring-secondary xsm:w-60"
+              src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707654734/DTS-Aircon/rxfvniylmuk2o12nyg58.png"
+              alt=""
+            />
+            <div className="rounded-lg bg-primary p-1 text-center font-bold text-white">
+              <p>Paramjeet Singh Dadiala</p>
+              <p>Co-Founder</p>
+            </div>
+          </div>
+          <div className="rounded-xl p-4  text-justify text-sm text-slate-700 ring-4 ring-primary xsm:text-xl  lg:w-[75%]">
+            <p className="pb-5">
+              {' '}
+              <b>Paramjeet Singh Dadiala</b>, a Mechanical Engineer by
+              profession is the Co-Founder of{' '}
+              <b>
+                {' '}
+                Dadiala Technical Services (DTS AIRCONDITIONING SYSTEMS LLP )
+              </b>
+              , has nearly two decades experience in <b>HVAC & MEP</b> projects
+              in the field of air conditioning & refrigeration.{' '}
+            </p>
+            <p>
+              Paramjeet Singh Dadiala is widely recognized across the{' '}
+              <b>India</b> and <b>Sultanate of Oman</b> for his path-breaking
+              and visionary contributions to the construction industry of Oman
+              through his prior dedicated role as an “Assistant Sales Manager”
+              and later as “Divisional Manager- Project & Engineering Division”
+              with Hitachi Home Life Science, Fedders International, Eros
+              Electricals, Oman Trading Establishment, Suhail Bahwan Group &
+              erstwhile Moosa Abdul Rehman Group & Al Hashar group respectively.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center lg:flex-row">
+          <div className="order-2 rounded-xl p-4 text-justify text-sm text-slate-700 ring-4 ring-primary xsm:text-xl lg:order-1  lg:w-[75%]">
+            <p className="py-2">
+              <b>Jigesh Hirani</b> a B.Sc Chemistry by Profession is the
+              Co-Founder of
+              <b> Dadiala Technical Services</b>. He is widely recognised across
+              the india for path breaking and visionary contrbutions to the
+              construction industry and facility management services last{' '}
+              <b>15 Years</b>.
+            </p>{' '}
+            <p className="pt-4">
+              His responsible for the growth, stability, direction and daily
+              opration of the Business and customer care.
+            </p>
+          </div>
+          <div className="order-1 mx-1 flex flex-col items-center justify-center gap-2 px-1 pb-5 text-slate-700 md:w-[25%] lg:pb-0">
+            <img
+              className="aspect-square w-40 rounded-full ring-4 ring-secondary xsm:w-60 "
+              src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707654734/DTS-Aircon/rxfvniylmuk2o12nyg58.png"
+              alt=""
+            />
+            <div className="w-40 rounded-lg bg-primary p-1 text-center font-bold text-white">
+              <p>Jigesh Hirani</p>
+              <p>Co-Founder</p>
+            </div>
           </div>
         </div>
       </div>

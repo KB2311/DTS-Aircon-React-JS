@@ -25,6 +25,11 @@ module.exports = {
         exclude: /node_modules/,
         use: ['@svgr/webpack'],
       },
+      {
+        test: /\.(otf|pdf)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader',
+      },
     ],
   },
   plugins: [

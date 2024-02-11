@@ -19,7 +19,12 @@ module.exports = {
         test: /\.css$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'postcss-loader'],
-      }, 
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: ['@svgr/webpack'],
+      },
     ],
   },
   plugins: [

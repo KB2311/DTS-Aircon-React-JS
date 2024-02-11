@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './CompanyLogo.css';
 
 const logo = [
@@ -195,7 +195,9 @@ function CompanyLogo() {
     <>
       {logo.map(x => (
         <div className="hexagon">
-          <img src={x.c_img} alt={x.c_name} data-aos="fade-up" />
+          <Fragment key={x.id}>
+            <img src={x.c_img} alt={x.c_name} data-aos="fade-up" />
+          </Fragment>
         </div>
       ))}
     </>

@@ -4,7 +4,7 @@ import './style.css';
 function Header() {
   return (
     <header
-      className="bg-primary fixed left-0 right-0  top-0 z-50 bg-opacity-90 py-2 font-bold"
+      className="fixed left-0 right-0 top-0 z-50 bg-primary bg-opacity-85 py-2 font-bold"
       id="header"
     >
       <div className="flex items-center justify-between px-container">

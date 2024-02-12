@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const projects = {
   INDIA: [
     {
@@ -38,9 +39,9 @@ function Projects() {
       <h2 className="section_title">
         Our <span>Projects</span>
       </h2>
-      <div className="flex justify-center gap-10 pt-8 text-center font-bold text-black">
+      <div className="flex sm:flex-row flex-col justify-center gap-10 pt-8 text-center font-bold text-black">
         {projects.INDIA.map(x => (
-          <div className="w-96 rounded-2xl bg-primary">
+          <div className=" rounded-2xl bg-primary">
             <div className="text-2xl">{x.city}</div>
             <div>{x.project_img}</div>
             <div className="text-xl">{x.project_name}</div>

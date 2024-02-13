@@ -1,7 +1,13 @@
 import React from 'react';
 
-function ProjectCard() {
-  return <div>ProjectCard</div>;
+function ProjectCard({ city, projectName, projectImg }) {
+  return (
+    <div className=" rounded-2xl bg-primary p-3">
+      <div className="text-2xl">{city}</div>
+      <div>{projectName}</div>
+      <div className="text-xl">{projectImg}</div>
+    </div>
+  );
 }
 
 export default ProjectCard;

@@ -6,6 +6,7 @@ function Contact() {
       <h2 className="section_title">
         Contact <span>Us</span>
       </h2>
+      <div>contact us</div>
     </section>
   );
 }

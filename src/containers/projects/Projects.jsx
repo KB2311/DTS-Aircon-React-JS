@@ -1,34 +1,39 @@
 import React from 'react';
-
+import ProjectCard from '../../components/projectCard/ProjectCard';
 
 const projects = {
   INDIA: [
     {
+      id: 1,
       city: 'RAJKOT',
-      project_name: 'AIIMS RAJKOT',
-      project_img: '',
+      projectName: 'AIIMS RAJKOT',
+      projectImg: '',
     },
     {
+      id: 2,
       city: 'JAIPUR',
-      project_name: 'SMS HOSPITAL IPD DIVISION -JAIPUR',
-      project_img: '',
+      projectName: 'SMS HOSPITAL IPD DIVISION -JAIPUR',
+      projectImg: '',
     },
     {
+      id: 3,
       city: 'ALWAR',
-      project_name: 'MEDICAL COLLEGE AT ALWAR',
-      project_img: '',
+      projectName: 'MEDICAL COLLEGE AT ALWAR',
+      projectImg: '',
     },
   ],
   OMAN: [
     {
+      id: 1,
       city: 'RUWI',
-      project_name: 'Tulip In Hotel , Ruwi',
-      project_img: '',
+      projectName: 'Tulip In Hotel , Ruwi',
+      projectImg: '',
     },
     {
+      id: 2,
       city: 'RUWI',
-      project_name: 'Nesto Hyper Market, Ruwi',
-      project_img: '',
+      projectName: 'Nesto Hyper Market, Ruwi',
+      projectImg: '',
     },
   ],
 };
@@ -39,13 +44,14 @@ function Projects() {
       <h2 className="section_title">
         Our <span>Projects</span>
       </h2>
-      <div className="flex sm:flex-row flex-col justify-center gap-10 pt-8 text-center font-bold text-black">
+      <div className="flex flex-col justify-center gap-10 pt-8 text-center font-bold text-black sm:flex-row">
         {projects.INDIA.map(x => (
-          <div className=" rounded-2xl bg-primary">
-            <div className="text-2xl">{x.city}</div>
-            <div>{x.project_img}</div>
-            <div className="text-xl">{x.project_name}</div>
-          </div>
+          <ProjectCard
+            key={x.id}
+            city={x.city}
+            projectName={x.projectName}
+            projectImg={x.projectImg}
+          />
         ))}
       </div>
     </section>

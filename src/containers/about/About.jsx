@@ -10,7 +10,73 @@ function About() {
       <h2 className="section_title pb-3">
         About <span>Us</span>
       </h2>
-      <div className="pt-5 text-justify">
+
+      <div className="my-10 flex h-full flex-col gap-10 ">
+        <div className="flex flex-col items-center lg:flex-row">
+          <div className="flex flex-col items-center justify-center gap-2 px-1 pb-5 text-slate-700 md:w-[25%] lg:pb-0">
+            <img
+              className="aspect-square w-40 rounded-full ring-4 ring-secondary xsm:w-60"
+              src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707654734/DTS-Aircon/rxfvniylmuk2o12nyg58.png"
+              alt=""
+            />
+            <div className="rounded-lg bg-primary p-1 text-center font-bold text-white">
+              <p>Paramjeet Singh Dadiala</p>
+              <p>Co-Founder</p>
+            </div>
+          </div>
+          <div className="rounded-xl p-4  text-justify text-sm text-slate-700 ring-4 ring-primary xsm:text-xl  lg:w-[75%]">
+            <p className="pb-5">
+              {' '}
+              <b>Paramjeet Singh Dadiala</b>, a Mechanical Engineer by
+              profession is the Co-Founder of{' '}
+              <b>
+                {' '}
+                Dadiala Technical Services (DTS AIRCONDITIONING SYSTEMS LLP )
+              </b>
+              , has nearly two decades experience in <b>HVAC & MEP</b> projects
+              in the field of air conditioning & refrigeration.{' '}
+            </p>
+            <p>
+              Paramjeet Singh Dadiala is widely recognized across the{' '}
+              <b>India</b> and <b>Sultanate of Oman</b> for his path-breaking
+              and visionary contributions to the construction industry of Oman
+              through his prior dedicated role as an “Assistant Sales Manager”
+              and later as “Divisional Manager- Project & Engineering Division”
+              with Hitachi Home Life Science, Fedders International, Eros
+              Electricals, Oman Trading Establishment, Suhail Bahwan Group &
+              erstwhile Moosa Abdul Rehman Group & Al Hashar group respectively.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center lg:flex-row">
+          <div className="order-2 rounded-xl p-4 text-justify text-sm text-slate-700 ring-4 ring-primary xsm:text-xl lg:order-1  lg:w-[75%]">
+            <p className="py-2">
+              <b>Jigesh Hirani</b> a B.Sc Chemistry by Profession is the
+              Co-Founder of
+              <b> Dadiala Technical Services</b>. He is widely recognised across
+              the india for path breaking and visionary contrbutions to the
+              construction industry and facility management services last{' '}
+              <b>15 Years</b>.
+            </p>{' '}
+            <p className="pt-4">
+              His responsible for the growth, stability, direction and daily
+              opration of the Business and customer care.
+            </p>
+          </div>
+          <div className="order-1 mx-1 flex flex-col items-center justify-center gap-2 px-1 pb-5 text-slate-700 md:w-[25%] lg:pb-0">
+            <img
+              className="aspect-square w-40 rounded-full ring-4 ring-secondary xsm:w-60 "
+              src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707654734/DTS-Aircon/rxfvniylmuk2o12nyg58.png"
+              alt=""
+            />
+            <div className="w-40 rounded-lg bg-primary p-1 text-center font-bold text-white">
+              <p>Jigesh Hirani</p>
+              <p>Co-Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-10 text-justify">
         <div className="grid grid-cols-1 justify-center gap-5 rounded-xl  bg-primary p-5 text-xl xsm:gap-8 xsm:p-8 md:grid-cols-2">
           <p className=" rounded-xl p-2 ring-2 ring-secondary">
             {' '}
@@ -79,71 +145,6 @@ function About() {
               Value driven Customer loyalty Challenging projects
             </p>
             <div className="icon_title">Mission</div>
-          </div>
-        </div>
-      </div>
-      <div className="flex h-full flex-col gap-10 pt-20 ">
-        <div className="flex flex-col items-center lg:flex-row">
-          <div className="flex flex-col items-center justify-center gap-2 px-1 pb-5 text-slate-700 md:w-[25%] lg:pb-0">
-            <img
-              className="aspect-square w-40 rounded-full ring-4 ring-secondary xsm:w-60"
-              src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707654734/DTS-Aircon/rxfvniylmuk2o12nyg58.png"
-              alt=""
-            />
-            <div className="rounded-lg bg-primary p-1 text-center font-bold text-white">
-              <p>Paramjeet Singh Dadiala</p>
-              <p>Co-Founder</p>
-            </div>
-          </div>
-          <div className="rounded-xl p-4  text-justify text-sm text-slate-700 ring-4 ring-primary xsm:text-xl  lg:w-[75%]">
-            <p className="pb-5">
-              {' '}
-              <b>Paramjeet Singh Dadiala</b>, a Mechanical Engineer by
-              profession is the Co-Founder of{' '}
-              <b>
-                {' '}
-                Dadiala Technical Services (DTS AIRCONDITIONING SYSTEMS LLP )
-              </b>
-              , has nearly two decades experience in <b>HVAC & MEP</b> projects
-              in the field of air conditioning & refrigeration.{' '}
-            </p>
-            <p>
-              Paramjeet Singh Dadiala is widely recognized across the{' '}
-              <b>India</b> and <b>Sultanate of Oman</b> for his path-breaking
-              and visionary contributions to the construction industry of Oman
-              through his prior dedicated role as an “Assistant Sales Manager”
-              and later as “Divisional Manager- Project & Engineering Division”
-              with Hitachi Home Life Science, Fedders International, Eros
-              Electricals, Oman Trading Establishment, Suhail Bahwan Group &
-              erstwhile Moosa Abdul Rehman Group & Al Hashar group respectively.
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center lg:flex-row">
-          <div className="order-2 rounded-xl p-4 text-justify text-sm text-slate-700 ring-4 ring-primary xsm:text-xl lg:order-1  lg:w-[75%]">
-            <p className="py-2">
-              <b>Jigesh Hirani</b> a B.Sc Chemistry by Profession is the
-              Co-Founder of
-              <b> Dadiala Technical Services</b>. He is widely recognised across
-              the india for path breaking and visionary contrbutions to the
-              construction industry and facility management services last{' '}
-              <b>15 Years</b>.
-            </p>{' '}
-            <p className="pt-4">
-              His responsible for the growth, stability, direction and daily
-              opration of the Business and customer care.
-            </p>
-          </div>
-          <div className="order-1 mx-1 flex flex-col items-center justify-center gap-2 px-1 pb-5 text-slate-700 md:w-[25%] lg:pb-0">
-            <img
-              className="aspect-square w-40 rounded-full ring-4 ring-secondary xsm:w-60 "
-              src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707654734/DTS-Aircon/rxfvniylmuk2o12nyg58.png"
-              alt=""
-            />
-            <div className="w-40 rounded-lg bg-primary p-1 text-center font-bold text-white">
-              <p>Jigesh Hirani</p>
-              <p>Co-Founder</p>
-            </div>
           </div>
         </div>
       </div>

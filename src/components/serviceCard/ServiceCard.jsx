@@ -10,7 +10,7 @@ function ServiceCard({ serviceTitle, serviceImage, servicesDetail }) {
         className="mx-auto my-5 aspect-square h-64 rounded-xl border-4 border-secondary bg-cover bg-center"
         data-aos="fade-up"
       />
-      <h3>{servicesDetail}</h3>
+      <h3 className="px-2">{servicesDetail}</h3>
     </div>
   );
 }

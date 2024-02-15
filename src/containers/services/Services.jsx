@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import ServiceCard from '../../components/serviceCard/ServiceCard';
 
 const services = [
@@ -77,4 +77,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default memo(Services);

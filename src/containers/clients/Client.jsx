@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import CompanyLogo from '../../components/companyCard/CompanyLogo';
 
 const logo = [
@@ -215,4 +215,4 @@ function Client() {
   );
 }
 
-export default Client;
+export default memo(Client);

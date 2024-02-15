@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import ProjectCard from '../../components/projectCard/ProjectCard';
 
 const projects = {
@@ -58,4 +58,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default memo(Projects);

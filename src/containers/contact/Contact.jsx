@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 function Contact() {
   return (
@@ -11,4 +11,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default memo(Contact);

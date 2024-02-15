@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import About from '../../containers/about/About';
 import Services from '../../containers/services/Services';
 import Projects from '../../containers/projects/Projects';
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default memo(Home);

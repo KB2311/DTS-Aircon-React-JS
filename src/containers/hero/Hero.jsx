@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PdfFile from '../../../Assets/DTS Brochure.pdf';
 import './Hero.css';
 
@@ -29,4 +29,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default memo(Hero);

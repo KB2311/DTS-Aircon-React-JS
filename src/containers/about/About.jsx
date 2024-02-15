@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import MissionIcon from '../../../Assets/icons/Mission_icon.svg';
 import EyeIcon from '../../../Assets/icons/eye-icon.svg';
 import RocketIcon from '../../../Assets/icons/rocket-icon.svg';
@@ -152,4 +152,4 @@ function About() {
   );
 }
 
-export default About;
+export default memo(About);

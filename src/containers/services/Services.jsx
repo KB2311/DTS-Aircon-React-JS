@@ -89,17 +89,17 @@ function Services() {
           BMS services with following method.
         </h3>
         <div className="grid-cols-2 items-center justify-items-center text-center font-bold text-primary xsm:grid lg:grid-cols-4">
-          <div className="">
-            <div className=" overflow-hidden rounded-full">
+          <div className="h-3/4 w-3/4">
+            <div className="aspect-square overflow-hidden rounded-full">
               <img
-                className="aspect-square"
+                className="h-full min-w-fit"
                 src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707977276/DTS-Aircon/Services/Oncallbasis.avif"
                 alt="OnCallBasis"
               />
             </div>
             <p>On Call Basis</p>
           </div>
-          <div className="">
+          <div className="h-3/4 w-3/4">
             <div className="aspect-square overflow-hidden rounded-full">
               <img
                 className="h-full min-w-fit"
@@ -109,7 +109,7 @@ function Services() {
             </div>
             <p>Annual Maintenance Contract</p>
           </div>
-          <div className="">
+          <div className="h-3/4 w-3/4">
             <div className="aspect-square overflow-hidden rounded-full">
               <img
                 className="h-full min-w-fit"
@@ -119,7 +119,7 @@ function Services() {
             </div>
             <p>Comprehensive Annual Maintenance Contract</p>
           </div>
-          <div className="">
+          <div className="h-3/4 w-3/4">
             <div className="aspect-square overflow-hidden rounded-full">
               <img
                 className="h-full min-w-fit"

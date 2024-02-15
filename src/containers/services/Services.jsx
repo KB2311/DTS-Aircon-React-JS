@@ -73,6 +73,64 @@ function Services() {
           />
         ))}
       </div>
+      <div className="">
+        <h2 className="section_title">
+          After Sales <span>Support</span>
+        </h2>
+        <h3 className="center py-6 text-justify text-lg font-bold text-slate-600  sm:text-2xl lg:px-20">
+          We have dedicated department to provide best after sales support our
+          customers. We are constantll working for improvement of quality
+          service by providing regular training to service engineers and giving
+          them world class tools.
+        </h3>
+        <h3 className="py-6 text-center text-lg font-bold text-slate-600 sm:text-2xl  md:text-justify lg:px-20">
+          We are serving in hotels, hospitals, industry, malls, residences.
+          educations segments with providing HVAC, Fire, Electrical, Plumbing &
+          BMS services with following method.
+        </h3>
+        <div className="grid-cols-2 items-center justify-items-center text-center font-bold text-primary xsm:grid lg:grid-cols-4">
+          <div className="">
+            <div className=" overflow-hidden rounded-full">
+              <img
+                className="aspect-square"
+                src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707977276/DTS-Aircon/Services/Oncallbasis.avif"
+                alt="OnCallBasis"
+              />
+            </div>
+            <p>On Call Basis</p>
+          </div>
+          <div className="">
+            <div className="aspect-square overflow-hidden rounded-full">
+              <img
+                className="h-full min-w-fit"
+                src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707977275/DTS-Aircon/Services/Annualmaintenance.jpg"
+                alt="AnnualContract"
+              />
+            </div>
+            <p>Annual Maintenance Contract</p>
+          </div>
+          <div className="">
+            <div className="aspect-square overflow-hidden rounded-full">
+              <img
+                className="h-full min-w-fit"
+                src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707977275/DTS-Aircon/Services/Comprehensive.webp"
+                alt="comprehensiveContract"
+              />
+            </div>
+            <p>Comprehensive Annual Maintenance Contract</p>
+          </div>
+          <div className="">
+            <div className="aspect-square overflow-hidden rounded-full">
+              <img
+                className="h-full min-w-fit"
+                src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707977276/DTS-Aircon/Services/Operation.png"
+                alt="Operation&Maintenance"
+              />
+            </div>
+            <p>Operation & Maintenance Contract</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

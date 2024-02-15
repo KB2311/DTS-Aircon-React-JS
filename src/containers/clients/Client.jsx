@@ -195,11 +195,11 @@ function Client() {
     <section className="" id="clients">
       <div className="mx-auto flex max-w-7xl flex-col">
         <div data-aos="fade-up">
-          <p className="headline_of_section">
-            <h2 className="section_title">
+          <h2 className="headline_of_section">
+            <p className="section_title">
               Major <span>Clients</span>
-            </h2>
-          </p>
+            </p>
+          </h2>
         </div>
         <div className="mt-11 flex h-3/5 flex-wrap justify-center gap-2">
           {logo.map(x => (

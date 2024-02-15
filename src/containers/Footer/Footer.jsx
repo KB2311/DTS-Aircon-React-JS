@@ -1,6 +1,6 @@
 import React from 'react';
 import FacebookIcon from '../../../Assets/icons/facebook-icon.svg';
-import TwitterIcon from '../../../Assets/icons/twitter-icon.svg';
+import YoutubeIcon from '../../../Assets/icons/youtube-icon.svg';
 import InstagramIcon from '../../../Assets/icons/instagram-icon.svg';
 import MapIcon from '../../../Assets/icons/maps-icon.svg';
 import WatsappIcon from '../../../Assets/icons/whatsapp-icon.svg';
@@ -23,8 +23,8 @@ function Footer() {
               </a>
               <img
                 className="w-44 cursor-pointer xsm:w-52"
-                src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707675017/DTS-Aircon/emarq7cutwndkxpw9ebv.jpg"
-                alt=""
+                src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707939808/DTS-Aircon/MEP_Logo.webp"
+                alt="MEP_logo"
               />
             </div>
             <div className="flex flex-wrap justify-center gap-5 px-3 py-5">
@@ -93,7 +93,12 @@ function Footer() {
                   className="transition-all duration-500 hover:scale-125"
                   type="button"
                 >
-                  <a href="#home" alt="button">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/people/DTS-Airconditioning-System/100083055700286/?mibextid=ibOpuV"
+                    alt="button"
+                    rel="noreferrer"
+                  >
                     <FacebookIcon height={40} />
                   </a>
                 </button>
@@ -102,7 +107,12 @@ function Footer() {
                   className="transition-all duration-500 hover:scale-125"
                   type="button"
                 >
-                  <a href="#home" alt="button">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/dtsairconditioningsystem?igsh=dTd5bjlrZndsaTM4&utm_source=qr "
+                    alt="button"
+                    rel="noreferrer"
+                  >
                     <InstagramIcon height={40} />
                   </a>
                 </button>
@@ -111,8 +121,8 @@ function Footer() {
                   className="transition-all duration-500 hover:scale-125"
                   type="button"
                 >
-                  <a href="#home" alt="button">
-                    <TwitterIcon height={40} />
+                  <a href="#home" className="" alt="button">
+                    <YoutubeIcon className="h-9 w-10 rounded-md bg-white" />
                   </a>
                 </button>
               </div>

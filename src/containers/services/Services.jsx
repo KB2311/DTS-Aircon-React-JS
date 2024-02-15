@@ -24,7 +24,7 @@ const services = [
     serviceImage:
       'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Fire%20Fighting.webp',
     servicesDetail:
-      ' Hydrant System Water Cu rtain System Sprinkler System Deluge Fire Protection System FM 200 Suppression System C02 Fire Suppression System',
+      ' Hydrant System Water Curtain System Sprinkler System Deluge Fire Protection System FM 200 Suppression System C02 Fire Suppression System',
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const services = [
     serviceImage:
       'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Solar.jpg',
     servicesDetail:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, soluta!',
+      'A comprehensive range of solar modules, charge controllers,solar batteries, solar lights, telecommunication power supplies,and complete system installation',
   },
 ];
 

@@ -3,7 +3,6 @@ import About from '../../containers/about/About';
 import Services from '../../containers/services/Services';
 import Projects from '../../containers/projects/Projects';
 import Client from '../../containers/clients/Client';
-import Contact from '../../containers/contact/Contact';
 import Hero from '../../containers/hero/Hero';
 
 function Home() {
@@ -14,7 +13,6 @@ function Home() {
       <Services />
       <Projects />
       <Client />
-      <Contact />
     </main>
   );
 }

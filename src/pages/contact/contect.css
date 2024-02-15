@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inputbox {
+    @apply w-full rounded-md p-2 outline-none ring-4 ring-secondary;
+  }
+}

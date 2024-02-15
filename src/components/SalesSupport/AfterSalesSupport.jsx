@@ -13,7 +13,7 @@ function AfterSalesSupport({ title, asimgUrl }) {
           />
         </div>
       </div>
-      <p>{title}</p>
+      <p className="rounded-xl bg-secondary xsm:text-xl">{title}</p>
     </div>
   );
 }

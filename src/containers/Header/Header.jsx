@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MenuIcon from '../../../Assets/icons/Menu-icon.svg';
 import CloseIcon from '../../../Assets/icons/close-icon.svg';
 import './style.css';
@@ -67,7 +68,7 @@ function Header() {
               <a href="#clients">Clients</a>
             </li>
             <li className="nav_link">
-              <a href="#contact">Contact Us</a>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
           <button

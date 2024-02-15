@@ -7,13 +7,13 @@ function ServiceSale({ title, sspimgUrl }) {
       <div className="flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-primary">
         <div className="relative flex aspect-square h-[90%] items-end justify-center overflow-hidden rounded-xl bg-primary-2">
           <img
-            className="absolute bottom-0 h-[90%] w-fit rounded-xl"
+            className="absolute bottom-0 h-[93%] w-fit rounded-xl"
             src={sspimgUrl}
             alt={title}
           />
         </div>
       </div>
-      <p>{title}</p>
+      <p className="rounded-xl bg-secondary xsm:text-xl">{title}</p>
     </div>
   );
 }

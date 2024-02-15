@@ -145,7 +145,7 @@ function Services() {
       </div>
 
       <div>
-        <h2 className="section_title">
+        <h2 className="section_title xsm:mt-20">
           After Sales <span>Support</span>
         </h2>
         <h3 className="py-6 text-justify text-lg font-bold text-slate-600  sm:text-2xl lg:px-20">
@@ -159,7 +159,7 @@ function Services() {
           educations segments with providing HVAC, Fire, Electrical, Plumbing &
           BMS services with following method.
         </h3>
-        <div className="grid grid-cols-1 items-center justify-items-center gap-y-5 text-center font-bold text-primary xsm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 items-center justify-items-center gap-y-5 text-center font-bold text-primary xsm:mb-14 xsm:grid-cols-2 lg:grid-cols-4">
           {afterSales.map(x => (
             <AfterSalesSupport
               key={x.id}

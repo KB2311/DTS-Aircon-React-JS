@@ -192,7 +192,7 @@ const logo = [
 
 function Client() {
   return (
-    <section className="" id="clients">
+    <section className="mb-5" id="clients">
       <div className="mx-auto flex max-w-7xl flex-col">
         <div data-aos="fade-up">
           <h2 className="headline_of_section">

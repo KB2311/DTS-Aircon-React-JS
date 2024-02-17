@@ -19,7 +19,7 @@ function Contact() {
       <div className="flex-1 py-2 xsm:p-5 md:my-5">
         <form
           id="form"
-          className="flex h-full w-full flex-col items-center justify-center gap-5 rounded-xl p-5 ring-2 ring-slate-500"
+          className="flex  h-full w-full flex-col items-center justify-center gap-5 rounded-xl p-5 ring-2 ring-slate-500"
         >
           <input
             id="name"

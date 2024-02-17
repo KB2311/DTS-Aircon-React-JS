@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .service_div {
+    @apply w-full rounded-xl bg-primary py-5 text-center xsm:w-[23rem];
+  }
+  .service_title {
+    @apply text-3xl font-bold text-secondary;
+  }
+  .service_img {
+    @apply mx-auto my-5 aspect-square h-64 rounded-xl border-4 border-secondary bg-cover bg-center;
+  }
+  .service_div_desc {
+    @apply px-5 text-left md:text-xl;
+  }
+  .service_desc {
+    @apply flex gap-2;
+  }
+}

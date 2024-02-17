@@ -1,36 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import MenuIcon from '../../../Assets/icons/Menu-icon.svg';
 import CloseIcon from '../../../Assets/icons/close-icon.svg';
 import './style.css';
 
 function Header() {
-  // this.menu = document.getElementById('menu');
-  // this.close = document.getElementById('close');
-  // this.navbar = document.getElementById('navbar');
-  // // this.navLinks = document.querySelectorAll('.nav_link');
-  // MenuOpen = () => {
+  // const menu = document.querySelectorAll('#menu');
+  // const close = document.querySelectorAll('#close');
+  // const navbar = document.querySelectorAll('#navbar');
+  // const navLinks = document.querySelectorAll('.nav_link');
+  // menu?.addEventListener('click', () => {
+  //   navbar.classList.remove('hidden');
+  //   close.classList.remove('hidden');
+  //   menu.classList.add('hidden');
+  // });
 
-  //   this.navbar.classList.remove('hidden');
-  //   this.close.classList.remove('hidden');
-  //   this.menu.classList.add('hidden');
-  // };
-
-  // MenuClose = () => {
-  //   this.navbar.classList.add('hidden');
-  //   this.close.classList.add('hidden');
-  //   this.menu.classList.remove('hidden');
-  // };
-
-  // LinkOpen = () => {
-  //   this.navLinks.forEach(link => {
-  //     link.addEventListener('click', () => {
-  //       this.navbar.classList.add('hidden');
-  //       this.menu.classList.remove('hidden');
-  //       this.close.classList.add('hidden');
-  //     });
+  // close?.addEventListener('click', () => {
+  //   navbar.classList.add('hidden');
+  //   close.classList.add('hidden');
+  //   menu.classList.remove('hidden');
+  // });
+  // navLinks?.forEach(link => {
+  //   link.addEventListener('click', () => {
+  //     navbar.classList.add('hidden');
+  //     menu.classList.remove('hidden');
+  //     close.classList.add('hidden');
   //   });
-  // };
+  // });
 
   return (
     <header
@@ -53,22 +49,34 @@ function Header() {
             id="navbar"
           >
             <li className="nav_link">
-              <a href="#hero">Home</a>
+              <HashLink smooth to="/#hero">
+                Home
+              </HashLink>
             </li>
             <li className="nav_link">
-              <a href="#about">About</a>
+              <HashLink smooth to="/#about">
+                About
+              </HashLink>
             </li>
             <li className="nav_link">
-              <a href="#services">Services</a>
+              <HashLink smooth to="/#services">
+                Services
+              </HashLink>
             </li>
             <li className="nav_link">
-              <a href="#projects">Projects</a>
+              <HashLink smooth to="/#projects">
+                Projects
+              </HashLink>
             </li>
             <li className="nav_link">
-              <a href="#clients">Clients</a>
+              <HashLink smooth to="/#clients">
+                Clients
+              </HashLink>
             </li>
             <li className="nav_link">
-              <Link to="/contact">Contact Us</Link>
+              <HashLink smooth to="/contact#contact">
+                Contact Us
+              </HashLink>
             </li>
           </ul>
           <button

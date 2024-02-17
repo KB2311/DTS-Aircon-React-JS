@@ -13,7 +13,9 @@ function AfterSalesSupport({ title, asimgUrl }) {
           />
         </div>
       </div>
-      <p className="rounded-xl bg-secondary xsm:text-xl">{title}</p>
+      <p className="flex h-16 items-center justify-center rounded-xl bg-secondary xsm:text-xl">
+        {title}
+      </p>
     </div>
   );
 }

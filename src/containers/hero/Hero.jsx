@@ -1,10 +1,10 @@
 import React, { memo } from 'react';
-import PdfFile from '../../../Assets/DTS Brochure.pdf';
+import PdfFile from '../../../Assets/DTS Aircon Brochure.pdf';
 import './Hero.css';
 
 function Hero() {
   return (
-    <div className="h-screen xsm:pt-14" id="hero">
+    <section className="h-screen xsm:pt-14" id="hero">
       <div className="flex h-full items-center justify-center text-center">
         <div className=" rounded-lg bg-black bg-opacity-65 py-8 font-bold xsm:rounded-3xl xsm:p-9 lg:w-[60%] lg:rounded-full ">
           <h2 className=" px-1  text-[7vw] text-white xsm:text-3xl lg:text-5xl">
@@ -25,7 +25,7 @@ function Hero() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

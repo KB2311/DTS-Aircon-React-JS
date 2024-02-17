@@ -1,59 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { memo } from 'react';
-import ServiceCard from '../../components/serviceCard/ServiceCard';
 import AfterSalesSupport from '../../components/SalesSupport/AfterSalesSupport';
 import ServiceSale from '../../components/SalesSupport/ServiceSale';
-
-const services = [
-  {
-    id: 1,
-    serviceTitle: 'HVAC',
-    serviceImage:
-      'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681225/DTS-Aircon/Services/HVAC.jpg',
-    servicesDetail:
-      'Chilled water & large air conditioning plant Ductable type systems VRF/VRV systems Ventilation system Split type system',
-  },
-  {
-    id: 2,
-    serviceTitle: 'Electrical',
-    serviceImage:
-      'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Electrical.jpg',
-    servicesDetail:
-      'Power Distribution H.T., L.T. & Transformer Internal External Lighting PA System Fire Alarm System',
-  },
-  {
-    id: 3,
-    serviceTitle: 'Fire Fighting',
-    serviceImage:
-      'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Fire%20Fighting.webp',
-    servicesDetail:
-      ' Hydrant System Water Curtain System Sprinkler System Deluge Fire Protection System FM 200 Suppression System C02 Fire Suppression System',
-  },
-  {
-    id: 4,
-    serviceTitle: 'Plumbing',
-    serviceImage:
-      'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Plumbing.jpg',
-    servicesDetail:
-      ' Cold & Hot Water System Hydro Pneumatic System Pumping & Control Syste Water Supply Managemen',
-  },
-  {
-    id: 5,
-    serviceTitle: 'BMS',
-    serviceImage:
-      'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/BMS.jpg',
-    servicesDetail:
-      'Building Automation System Mon Itoring & Control of  Services Vite Alarm System Voltage System',
-  },
-  {
-    id: 6,
-    serviceTitle: 'Solar',
-    serviceImage:
-      'https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Solar.jpg',
-    servicesDetail:
-      'A comprehensive range of solar modules, charge controllers,solar batteries, solar lights, telecommunication power supplies,and complete system installation',
-  },
-];
+import './Service.css';
 
 const SaleServiceProduct = [
   {
@@ -121,14 +70,185 @@ function Services() {
         commissiontng, approvals from authorities & maintenance.
       </h3>
       <div className="relative grid grid-cols-1 justify-items-center gap-x-2 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map(x => (
-          <ServiceCard
-            key={x.id}
-            serviceTitle={x.serviceTitle}
-            serviceImage={x.serviceImage}
-            servicesDetail={x.servicesDetail}
+        <div className="service_div">
+          <h3 className="service_title">HVAC</h3>
+          <div
+            style={{
+              backgroundImage: `url('https://res.cloudinary.com/ddffgfse1/image/upload/v1707681225/DTS-Aircon/Services/HVAC.jpg')`,
+            }}
+            className="service_img"
+            data-aos="fade-up"
           />
-        ))}
+          <h3 className="service_div_desc">
+            <div className="service_desc">
+              {' '}
+              <span>♦ </span>
+              <p>Chilled water & large air conditioning plant</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Ductable type systems</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>VRF/VRV systems</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Ventilation system Split type system</p>
+            </div>
+          </h3>
+        </div>
+        <div className="service_div">
+          <h3 className="service_title">Electrical</h3>
+          <div
+            style={{
+              backgroundImage: `url('https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Electrical.jpg')`,
+            }}
+            className="service_img"
+            data-aos="fade-up"
+          />
+          <h3 className="service_div_desc">
+            <div className="service_desc">
+              {' '}
+              <span>♦ </span>
+              <p>Power Distribution</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>H.T., L.T. & Transformer</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p> Internal External Lighting</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>PA System</p>
+            </div>{' '}
+            <div className="service_desc">
+              <span>♦ </span>
+              <p> Fire Alarm System</p>
+            </div>
+          </h3>
+        </div>
+        <div className="service_div">
+          <h3 className="service_title">Fire Fighting</h3>
+          <div
+            style={{
+              backgroundImage: `url('https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Fire%20Fighting.webp')`,
+            }}
+            className="service_img"
+            data-aos="fade-up"
+          />
+          <h3 className="service_div_desc">
+            <div className="service_desc">
+              {' '}
+              <span>♦ </span>
+              <p>Hydrant System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Water Curtain System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Sprinkler System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Deluge Fire Protection System</p>
+            </div>{' '}
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>FM 200 Suppression System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>C02 Fire Suppression System</p>
+            </div>
+          </h3>
+        </div>
+        <div className="service_div">
+          <h3 className="service_title">Plumbing</h3>
+          <div
+            style={{
+              backgroundImage: `url('https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Plumbing.jpg')`,
+            }}
+            className="service_img"
+            data-aos="fade-up"
+          />
+          <h3 className="service_div_desc">
+            <div className="service_desc">
+              {' '}
+              <span>♦ </span>
+              <p>Cold & Hot Water System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Hydro Pneumatic System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p> Pumping & Control Syste</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Water Supply Managemen</p>
+            </div>{' '}
+          </h3>
+        </div>
+        <div className="service_div">
+          <h3 className="service_title">BMS</h3>
+          <div
+            style={{
+              backgroundImage: `url('https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/BMS.jpg')`,
+            }}
+            className="service_img"
+            data-aos="fade-up"
+          />
+          <h3 className="service_div_desc">
+            <div className="service_desc">
+              {' '}
+              <span>♦ </span>
+              <p> Building Automation System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Mon Itoring & Control of Services</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p> Vite Alarm System</p>
+            </div>
+            <div className="service_desc">
+              <span>♦ </span>
+              <p>Voltage System</p>
+            </div>{' '}
+          </h3>
+        </div>
+        <div className="service_div">
+          <h3 className="service_title">Solar</h3>
+          <div
+            style={{
+              backgroundImage: `url('https://res.cloudinary.com/ddffgfse1/image/upload/v1707681224/DTS-Aircon/Services/Solar.jpg')`,
+            }}
+            className="service_img"
+            data-aos="fade-up"
+          />
+          <h3 className="service_div_desc">
+            <div className="service_desc">
+              {' '}
+              <span>♦ </span>
+              <p>
+                {' '}
+                A comprehensive range of solar modules, charge controllers,
+                solar batteries, solar lights, telecommunication power
+                supplies,and complete system installation
+              </p>
+            </div>
+          </h3>
+        </div>
       </div>
 
       <div className="mt-10 bg-primary p-5">
@@ -148,7 +268,7 @@ function Services() {
         <h2 className="section_title xsm:mt-20">
           After Sales <span>Support</span>
         </h2>
-        <h3 className="py-6 text-justify text-lg font-bold text-slate-600  sm:text-2xl lg:px-20">
+        <h3 className="pt-6 text-justify text-lg font-bold text-slate-600  sm:text-2xl lg:px-20">
           We have dedicated department to provide best after sales support our
           customers. We are constantll working for improvement of quality
           service by providing regular training to service engineers and giving

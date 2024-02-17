@@ -30,7 +30,7 @@ html {
 }
 
 section {
-  @apply min-h-fit px-container pt-5 xsm:pt-14;
+  @apply min-h-fit px-container pt-14;
 }
 
 .section_title {

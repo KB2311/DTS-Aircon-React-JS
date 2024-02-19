@@ -32,10 +32,10 @@ function Header() {
           </h1>
         </a>
         <nav
-          className={`absolute left-0 right-0 top-12 bg-primary bg-opacity-85  py-5 text-lg lg:static lg:block lg:bg-opacity-0 lg:pt-0 ${!isNavOpen ? 'hidden' : 'block'}`}
+          className={`absolute left-0 right-0 top-12 h-fit bg-primary bg-opacity-95 px-10 py-5 text-lg lg:static lg:block lg:bg-opacity-0 lg:py-0 ${!isNavOpen ? 'hidden' : 'block'}`}
         >
           <ul
-            className="flex flex-col items-center justify-center gap-10 px-10 lg:flex-row lg:justify-end"
+            className="flex flex-col items-center justify-center gap-10 lg:flex-row "
             id="navbar"
           >
             <li className="nav_link">
@@ -83,7 +83,7 @@ function Header() {
           onClick={ToggleMenu}
           type="button"
           aria-label="CloseButton"
-          className={` ${isNavOpen ? 'block' : 'hidden'}`}
+          className={`lg:hidden ${isNavOpen ? 'block' : 'hidden'}`}
           id="close"
         >
           <CloseIcon height={20} className="fill-white" />

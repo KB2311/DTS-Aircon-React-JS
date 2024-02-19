@@ -69,7 +69,7 @@ function Services() {
         engineering, Procurement, project aranagement, installation, testingt
         commissiontng, approvals from authorities & maintenance.
       </h3>
-      <div className="relative grid grid-cols-1 justify-items-center gap-x-2 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         <div className="service_div">
           <h3 className="service_title">HVAC</h3>
           <div

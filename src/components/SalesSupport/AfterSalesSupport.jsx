@@ -13,7 +13,7 @@ function AfterSalesSupport({ title, asimgUrl }) {
           />
         </div>
       </div>
-      <p className="flex h-16 items-center justify-center rounded-xl bg-secondary xsm:text-xl">
+      <p className="flex min-h-16 items-center justify-center rounded-xl bg-secondary xsm:text-xl">
         {title}
       </p>
     </div>

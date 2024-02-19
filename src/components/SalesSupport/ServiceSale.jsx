@@ -13,7 +13,9 @@ function ServiceSale({ title, sspimgUrl }) {
           />
         </div>
       </div>
-      <p className="rounded-xl bg-secondary xsm:text-xl">{title}</p>
+      <p className="flex min-h-10 items-center justify-center rounded-xl bg-secondary xsm:text-xl md:min-h-12">
+        {title}
+      </p>
     </div>
   );
 }

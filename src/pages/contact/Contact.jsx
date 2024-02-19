@@ -37,10 +37,8 @@ function Contact() {
             required
             className="inputbox"
           />
-          <select className="inputbox" required id="subject">
-            <option defaultValue value="">
-              Select Subject...
-            </option>
+          <select className="inputbox text-slate-500" required id="subject">
+            <option defaultValue>Select Subject...</option>
             <option value="HVAC">HVAC</option>
             <option value="FIRE FIGHTING">FIRE FIGHTING</option>
             <option value="ELECTRICAL">ELECTRICAL</option>
@@ -58,7 +56,7 @@ function Contact() {
           />
           <button
             id="btn"
-            className="w-fit rounded-md bg-primary px-5 py-2 text-xl text-white"
+            className="w-fit rounded-md bg-primary px-5 py-2 text-xl text-white transition-all duration-300 hover:scale-110"
             type="submit"
           >
             Submit

@@ -1,7 +1,64 @@
-import React from 'react';
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useState } from 'react';
 import './contect.css';
 
 function Contact() {
+  const [submit, setSubmit] = useState('Submit');
+  const [message, setMessage] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    description: '',
+  });
+
+  const submitForm = async e => {
+    e.preventDefault();
+
+    try {
+      setSubmit('Submitting...');
+      const res = await fetch(
+        'https://script.google.com/macros/s/AKfycbxGOVbA5g3ABFF0bEGSCWBbYVJkKVyEl83BugsrtK5XxL2-qLZvGALVxXOrHOZSCiB24Q/exec',
+        {
+          method: 'POST',
+          body: new FormData(e.target),
+        },
+      );
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+
+      const data = await res.json();
+
+      console.log('Form submission response:', data);
+
+      // Clear form fields on successful submission
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        description: '',
+      });
+      setSubmit('Submit');
+      setMessage('Your Data Saved Successfully......');
+      setTimeout(() => {
+        setMessage('');
+      }, 5000);
+    } catch (error) {
+      console.log(error);
+      throw new Error(error);
+    }
+  };
+
+  const handleInputChange = e => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <section
       className="flex flex-col gap-4 px-container text-black"
@@ -22,26 +79,37 @@ function Contact() {
         </div>
         <div className="flex-1 py-2 xsm:p-5 md:my-5">
           <form
-            id="form"
+            onSubmit={submitForm}
             className="flex  h-full w-full flex-col items-center justify-center gap-5 rounded-xl p-5 ring-2 ring-slate-500"
           >
+            <p className="text-lg font-bold text-green-700">{message}</p>
             <input
-              id="name"
+              name="name"
               autoComplete="name"
               type="text"
               placeholder="Enter Your Name"
               required
               className="inputbox"
+              value={formData.name}
+              onChange={handleInputChange}
             />
             <input
-              id="email"
+              name="email"
               autoComplete="email"
               type="email"
               placeholder="Enter Your Email"
               required
               className="inputbox"
+              value={formData.email}
+              onChange={handleInputChange}
             />
-            <select className="inputbox text-slate-500" required id="subject">
+            <select
+              value={formData.subject}
+              onChange={handleInputChange}
+              name="subject"
+              className="inputbox text-slate-500"
+              required
+            >
               <option defaultValue>Select Subject...</option>
               <option value="HVAC">HVAC</option>
               <option value="FIRE FIGHTING">FIRE FIGHTING</option>
@@ -51,19 +119,20 @@ function Contact() {
               <option value="INTERIOR FITOUT">INTERIOR FITOUT</option>
             </select>
             <textarea
+              name="description"
               className="inputbox"
               placeholder="Enter description"
               required
-              id="description"
               cols="30"
               rows="5"
+              value={formData.description}
+              onChange={handleInputChange}
             />
             <button
-              id="btn"
               className="w-fit rounded-md bg-primary px-5 py-2 text-xl text-white transition-all duration-300 hover:scale-110"
               type="submit"
             >
-              Submit
+              {submit}
             </button>
           </form>
         </div>

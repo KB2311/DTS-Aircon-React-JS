@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+import React, { memo } from 'react';
 import './CompanyLogo.css';
 
 function CompanyLogo({ clientName, clientImg }) {
@@ -9,4 +10,4 @@ function CompanyLogo({ clientName, clientImg }) {
   );
 }
 
-export default CompanyLogo;
+export default memo(CompanyLogo);

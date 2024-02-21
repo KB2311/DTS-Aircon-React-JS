@@ -1,5 +1,4 @@
 import React, { useEffect, useState, memo } from 'react';
-// import ProjectCard from '../../components/projectCard/ProjectCard';
 import LeftIcon from '../../../Assets/icons/left-arrow-icon.svg';
 import RightIcon from '../../../Assets/icons/right-arrow-icon.svg';
 

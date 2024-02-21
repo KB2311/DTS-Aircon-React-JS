@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 function MoreProjects() {
   return <div>MoreProjects</div>;
 }
 
-export default MoreProjects;
+export default memo(MoreProjects);

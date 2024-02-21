@@ -1,6 +1,6 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React, { memo, useState } from 'react';
 import './contect.css';
 
 function Contact() {
@@ -141,4 +141,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default memo(Contact);

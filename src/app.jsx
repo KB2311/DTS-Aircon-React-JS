@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import DashboardLayout from './layout/DashboardLayout';
 import Home from './pages/home/Home';
@@ -27,4 +27,4 @@ function App() {
   return <RouterProvider router={router} />;
 }
 
-export default App;
+export default memo(App);

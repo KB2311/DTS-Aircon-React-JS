@@ -1,13 +1,14 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { memo, useState } from 'react';
-import './contect.css';
+import FormDts from '../../components/FormDts/FormDts';
 
 function Contact() {
   const [submit, setSubmit] = useState('Submit');
   const [message, setMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
+    mobile: '',
     email: '',
     subject: '',
     description: '',
@@ -19,7 +20,7 @@ function Contact() {
     try {
       setSubmit('Submitting...');
       const res = await fetch(
-        'https://script.google.com/macros/s/AKfycbxGOVbA5g3ABFF0bEGSCWBbYVJkKVyEl83BugsrtK5XxL2-qLZvGALVxXOrHOZSCiB24Q/exec',
+        'https://script.google.com/macros/s/AKfycbybb55O3VS5CYHayC8PbQGI-D65ysVfUWE_np_45ZxR4Ja708aMN4d1w94WM4q0CdKR/exec',
         {
           method: 'POST',
           body: new FormData(e.target),
@@ -37,6 +38,7 @@ function Contact() {
       // Clear form fields on successful submission
       setFormData({
         name: '',
+        mobile: '',
         email: '',
         subject: '',
         description: '',
@@ -78,63 +80,13 @@ function Contact() {
           />
         </div>
         <div className="flex-1 py-2 xsm:p-5 md:my-5">
-          <form
-            onSubmit={submitForm}
-            className="flex  h-full w-full flex-col items-center justify-center gap-5 rounded-xl p-5 ring-2 ring-slate-500"
-          >
-            <p className="text-lg font-bold text-green-700">{message}</p>
-            <input
-              name="name"
-              autoComplete="name"
-              type="text"
-              placeholder="Enter Your Name"
-              required
-              className="inputbox"
-              value={formData.name}
-              onChange={handleInputChange}
-            />
-            <input
-              name="email"
-              autoComplete="email"
-              type="email"
-              placeholder="Enter Your Email"
-              required
-              className="inputbox"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-            <select
-              value={formData.subject}
-              onChange={handleInputChange}
-              name="subject"
-              className="inputbox text-slate-500"
-              required
-            >
-              <option defaultValue>Select Subject...</option>
-              <option value="HVAC">HVAC</option>
-              <option value="FIRE FIGHTING">FIRE FIGHTING</option>
-              <option value="ELECTRICAL">ELECTRICAL</option>
-              <option value="PLUMBING">PLUMBING</option>
-              <option value="SOLAR">SOLAR</option>
-              <option value="INTERIOR FITOUT">INTERIOR FITOUT</option>
-            </select>
-            <textarea
-              name="description"
-              className="inputbox"
-              placeholder="Enter description"
-              required
-              cols="30"
-              rows="5"
-              value={formData.description}
-              onChange={handleInputChange}
-            />
-            <button
-              className="w-fit rounded-md bg-primary px-5 py-2 text-xl text-white transition-all duration-300 hover:scale-110"
-              type="submit"
-            >
-              {submit}
-            </button>
-          </form>
+          <FormDts
+            submitForm={submitForm}
+            formData={formData}
+            handleInputChange={handleInputChange}
+            submit={submit}
+            message={message}
+          />
         </div>
       </div>
     </section>

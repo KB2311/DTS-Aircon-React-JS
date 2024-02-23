@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .inputbox {
+    @apply w-full rounded-md p-2 outline-none ring-2 ring-secondary focus:shadow-lg focus:shadow-slate-500 focus:ring-2 focus:ring-violet-700;
+  }
+}

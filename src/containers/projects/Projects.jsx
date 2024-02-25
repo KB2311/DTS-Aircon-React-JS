@@ -40,9 +40,13 @@ import RightIcon from '../../../Assets/icons/right-arrow-icon.svg';
 // };
 
 const images = [
-  'https://5.imimg.com/data5/SELLER/Default/2023/4/303321244/FC/VV/WB/135658225/box-cricket-ground.jpeg',
-  'https://www.kreedon.com/wp-content/uploads/2019/06/DSC_5239-1024x684-1024x516.jpg.webp',
-  'https://5.imimg.com/data5/ANDROID/Default/2021/1/MJ/HS/RL/118190257/product-jpeg.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857817/DTS-Aircon/Projects/AIIMS_RAJKOT.png',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857817/DTS-Aircon/Projects/AKSHARDHAM_MANDIR-DELHI.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857817/DTS-Aircon/Projects/Major_Solar_System_Installation.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/Medical_College_at_Alwar.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708858609/DTS-Aircon/Projects/Tulip_In_Hotel.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708858609/DTS-Aircon/Projects/Oman.jpg',
+  // 'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/SMS_HOSPITAL.jpg',
 ];
 function Projects() {
   const [image, setImage] = useState(0);

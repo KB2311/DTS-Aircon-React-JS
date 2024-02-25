@@ -44,8 +44,9 @@ const images = [
   'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857817/DTS-Aircon/Projects/AKSHARDHAM_MANDIR-DELHI.jpg',
   'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857817/DTS-Aircon/Projects/Major_Solar_System_Installation.jpg',
   'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/Medical_College_at_Alwar.jpg',
-  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708858609/DTS-Aircon/Projects/Tulip_In_Hotel.jpg',
-  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708858609/DTS-Aircon/Projects/Oman.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708859531/DTS-Aircon/Projects/Tulip_In_Hotel.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708860547/DTS-Aircon/Projects/SMSHOSPITAL.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/e_improve:indoor/DTS-Aircon/Projects/Nesto_HyperMarket.jpg',
   // 'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/SMS_HOSPITAL.jpg',
 ];
 function Projects() {
@@ -79,7 +80,7 @@ function Projects() {
             />
           ))}
         </div> */}
-      <div className="relative mt-5 flex h-72 w-full md:h-[75vh]">
+      <div className="relative mt-5 flex h-72 w-full md:h-[85vh]">
         <img
           src={images[image]}
           alt="Project_images"

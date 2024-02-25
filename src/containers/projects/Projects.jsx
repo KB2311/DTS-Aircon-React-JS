@@ -46,7 +46,7 @@ const images = [
   'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/Medical_College_at_Alwar.jpg',
   'https://res.cloudinary.com/ddffgfse1/image/upload/v1708858609/DTS-Aircon/Projects/Tulip_In_Hotel.jpg',
   'https://res.cloudinary.com/ddffgfse1/image/upload/v1708858609/DTS-Aircon/Projects/Oman.jpg',
-  // 'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/SMS_HOSPITAL.jpg',
+  'https://res.cloudinary.com/ddffgfse1/image/upload/v1708857816/DTS-Aircon/Projects/SMS_HOSPITAL.jpg',
 ];
 function Projects() {
   const [image, setImage] = useState(0);

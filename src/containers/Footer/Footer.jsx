@@ -4,7 +4,6 @@ import YoutubeIcon from '../../../Assets/icons/youtube-icon.svg';
 import InstagramIcon from '../../../Assets/icons/instagram-icon.svg';
 import MapIcon from '../../../Assets/icons/maps-icon.svg';
 import WatsappIcon from '../../../Assets/icons/whatsapp-icon.svg';
-import ClickIcon from '../../../Assets/icons/click-icon.svg';
 import MailIcon from '../../../Assets/icons/mail-icon.svg';
 
 function Footer() {
@@ -48,7 +47,7 @@ function Footer() {
               </span>
             </div>
           </div>
-          <div className="mx-auto flex-1 px-2 text-center">
+          <div className="mx-auto flex flex-1 flex-col justify-center px-2 text-center">
             <div className="flex flex-col gap-5 pt-5 text-lg xsm:gap-2">
               <div className="flex items-center gap-5">
                 <div className="flex aspect-square w-8 items-center justify-center rounded-full bg-primary-2 px-2">
@@ -71,19 +70,29 @@ function Footer() {
                   dtsairconsystem@gmail.com
                 </a>
               </div>
-              <div className="flex items-center gap-5">
-                <div className="flex aspect-square w-8 items-center justify-center rounded-full bg-primary-2">
-                  <ClickIcon className="w-3 fill-white " />
-                </div>
-                <a href="www.dtsaircon.com" alt="dts_link">
-                  www.dtsaircon.com
-                </a>
-              </div>
+
               <div className="flex items-center gap-5">
                 <div className="flex aspect-square w-8 items-center justify-center rounded-full bg-primary-2">
                   <WatsappIcon className="w-4 fill-white " />
                 </div>
-                <p>9925791575 | 99130 21374</p>
+                <p>
+                  {' '}
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://wa.me/+919925791575"
+                  >
+                    9925791575
+                  </a>{' '}
+                  |{' '}
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://wa.me/+919913021374"
+                  >
+                    9913021374
+                  </a>
+                </p>
               </div>
             </div>
             <div>

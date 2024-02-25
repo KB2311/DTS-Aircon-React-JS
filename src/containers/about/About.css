@@ -7,7 +7,7 @@
     @apply relative mx-auto w-full rounded-xl p-3 pt-20 ring-4 ring-secondary;
   }
   .icon_svg {
-    @apply absolute -top-14 left-14 flex h-28 w-28 items-center justify-center rounded-full bg-white ring-2 ring-primary xsm:h-32 xsm:w-32  lg:left-10;
+    @apply absolute -top-14 left-14 flex h-28 w-28 items-center justify-center rounded-full bg-white ring-4 ring-secondary xsm:h-32 xsm:w-32  lg:left-10;
   }
   .icon_title {
     @apply absolute -bottom-5 left-[20%] flex w-[60%] items-center justify-center rounded-xl bg-primary py-1 text-xl font-bold text-white;

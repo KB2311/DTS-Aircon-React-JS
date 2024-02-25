@@ -4,13 +4,23 @@ import './Hero.css';
 
 function Hero() {
   return (
-    <section className="h-screen xsm:pt-14" id="hero">
-      <div className="flex h-full items-center justify-center text-center">
-        <div className=" rounded-lg bg-black bg-opacity-65 py-8 font-bold xsm:rounded-3xl xsm:p-9 lg:w-[60%] lg:rounded-full ">
+    <section
+      className="flex h-screen items-center justify-center xsm:pt-14"
+      id="hero"
+    >
+      <div className="flex flex-col items-center rounded-lg bg-black bg-opacity-65 py-8 font-bold xsm:rounded-3xl xsm:p-9 lg:w-[60%] lg:rounded-full ">
+        <div className="flex flex-col items-center gap-3">
+          <img
+            className="h-36"
+            src="https://res.cloudinary.com/ddffgfse1/image/upload/v1708857587/DTS-Aircon/DTS%20Final%20Logo.png"
+            alt="DTSlogo"
+          />
           <h2 className=" px-1 text-[6vw] text-white xsm:text-3xl lg:text-5xl">
             ❝ <span className="text-secondary">Building - The Revolution</span>{' '}
             ❞
           </h2>
+        </div>
+        <div className="flex flex-col items-center gap-1">
           <h2 className="py-10 text-[5vw] xsm:text-xl lg:text-3xl">
             MEP & HVAC Contracting Services
           </h2>

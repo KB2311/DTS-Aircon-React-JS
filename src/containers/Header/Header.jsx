@@ -17,19 +17,9 @@ function Header() {
       id="header"
     >
       <div className="relative flex items-center justify-between px-container">
-        <a
-          className="flex w-fit cursor-pointer items-center gap-3"
-          href="#home"
-        >
+        <a className="cursor-pointer" href="#home">
           {' '}
-          <img
-            className="h-10 "
-            src="https://res.cloudinary.com/ddffgfse1/image/upload/v1707243196/DTS-Aircon/DTS_logo_ecaznx.png"
-            alt="DTSlogo"
-          />
-          <h1 className="flex w-fit items-center justify-center text-xl">
-            DTS Aircon
-          </h1>
+          <h1 className="text-2xl">DTS AIRCON</h1>
         </a>
         <nav
           className={`absolute left-0 right-0 top-12 h-fit bg-primary bg-opacity-95 px-10 py-5 text-lg lg:static lg:block lg:bg-opacity-0 lg:py-0 ${!isNavOpen ? 'hidden' : 'block'}`}

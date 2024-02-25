@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import MissionIcon from '../../../Assets/icons/Mission_icon.svg';
-import EyeIcon from '../../../Assets/icons/eye-icon.svg';
+import MissionIcon from '../../../Assets/icons/target-line-icon.svg';
+import EyeIcon from '../../../Assets/icons/eye-look-icon.svg';
 import RocketIcon from '../../../Assets/icons/rocket-icon.svg';
 import './About.css';
 
@@ -112,7 +112,7 @@ function About() {
         <div className="mx-auto grid grid-cols-1 gap-24 pt-20 font-semibold  text-slate-600 xsm:px-2 lg:grid-cols-3 lg:gap-5">
           <div className="icon_div">
             <div className="icon_svg">
-              <MissionIcon className="pl-2" height={90} />
+              <MissionIcon className="fill-primary pl-2" height={80} />
             </div>
             <p className="pb-3 xsm:pt-3">
               Our Core Values are guiding principles that transcend the effects
@@ -124,7 +124,7 @@ function About() {
           </div>
           <div className="icon_div">
             <div className="icon_svg">
-              <EyeIcon height={60} className="fill-red-500" />
+              <EyeIcon height={60} className="fill-primary" />
             </div>
             <p className="pb-3 xsm:pt-3">
               <span className="text-xl font-bold">“</span>
@@ -139,7 +139,7 @@ function About() {
           </div>
           <div className="icon_div">
             <div className="icon_svg">
-              <RocketIcon height={60} className="fill-red-500" />
+              <RocketIcon height={60} className="fill-primary" />
             </div>
             <p className="pb-3 text-xl lg:py-5">
               Value driven Customer loyalty Challenging projects
